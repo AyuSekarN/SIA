@@ -1,0 +1,62 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/updateCustomerTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:paddingTop="16dp"
+        android:text="Update Customer"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:layout_gravity="center_horizontal"/>
+
+    <EditText
+        android:id="@+id/etNamaCustomer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama Customer"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/etAlamatCustomer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Alamat Customer"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/etNoTelp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nomor Telepon"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/etEmailCustomer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/etBatasKredit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Batas Kredit"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

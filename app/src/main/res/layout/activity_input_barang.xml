@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InputBarangActivity"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/namaHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Input Sepatu"
+        android:textSize="16sp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/namaLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Sepatu"
+        android:textSize="16sp"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintTop_toBottomOf="@id/namaHeader"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/namaSepatuInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan nama sepatu"
+        android:inputType="text"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/namaLabel"
+        android:padding="12dp"/>
+
+    <!-- Input Harga Sepatu -->
+    <TextView
+        android:id="@+id/hargaLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Harga Sepatu"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/namaSepatuInput" />
+
+    <EditText
+        android:id="@+id/hargaSepatuInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan harga sepatu"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hargaLabel"
+        android:padding="12dp"/>
+
+    <!-- Button untuk Menyimpan Data -->
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Simpan"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hargaSepatuInput"
+        android:padding="12dp"
+        android:textColor="#FFFFFF"
+        android:background="#4CAF50"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

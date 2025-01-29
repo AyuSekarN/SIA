@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InputCustActivity"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/namaHeaderCust"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Input Customer"
+        android:textSize="24sp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/namaLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama : "
+        android:textSize="16sp"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintTop_toBottomOf="@id/namaHeaderCust"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/namaCustInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan nama customer"
+        android:inputType="text"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/namaLabel"
+        android:padding="12dp"/>
+
+    <TextView
+        android:id="@+id/alamatLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alamat : "
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/namaCustInput" />
+
+    <EditText
+        android:id="@+id/alamatInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan alamat customer"
+        android:inputType="text"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/alamatLabel"
+        android:padding="12dp"/>
+
+    <TextView
+        android:id="@+id/noteleponLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No. Telepon : "
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/alamatInput" />
+
+    <EditText
+        android:id="@+id/noteleponInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan alamat customer"
+        android:inputType="phone"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/noteleponLabel"
+        android:padding="12dp"/>
+
+    <TextView
+        android:id="@+id/emailLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email : "
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/noteleponInput" />
+
+    <EditText
+        android:id="@+id/emailInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan email customer"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/emailLabel"
+        android:padding="12dp"/>
+
+    <TextView
+        android:id="@+id/bataskreditLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Batas Kredit : "
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/emailInput" />
+
+    <EditText
+        android:id="@+id/bataskreditInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan batas kredit customer"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bataskreditLabel"
+        android:padding="12dp"/>
+    <!-- Button untuk Menyimpan Data -->
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Simpan"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bataskreditInput"
+        android:padding="12dp"
+        android:textColor="#FFFFFF"
+        android:background="#4CAF50"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

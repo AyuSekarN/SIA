@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:id="@+id/main"
+    android:background="#f9f9f9"
+    tools:context=".PembayaranPiutangActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Form Pembayaran Piutang"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+            android:textColor="#333" />
+
+        <!-- Input: Kode Akun -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kode Akun"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etKodeAkun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan kode akun"
+            android:inputType="number"
+            android:enabled="false"
+            android:padding="12dp"
+            android:textColor="@color/black"/>
+
+        <!-- Input: ID Bayar Piutang -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID Pembayaran"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etIdBayarPiutang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="No. pembayaran"
+            android:inputType="number"
+            android:enabled="false"
+            android:padding="12dp"
+            android:textColor="@color/black"/>
+
+        <!-- Input: Customer -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customer"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etCustomer"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="Nama Customer"
+                android:inputType="text"
+                android:padding="12dp"
+                android:enabled="false"
+                android:textColor="@color/black" />
+
+            <ImageButton
+                android:id="@+id/btnSearchCustomer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:contentDescription="Cari Customer" />
+        </LinearLayout>
+
+        <!-- Input: ID Penjualan -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID Penjualan"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etIdPenjualan"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="Cari ID Penjualan"
+                android:inputType="number"
+                android:padding="12dp" />
+            <Button
+                android:id="@+id/btnSearchIdPenjualan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cari" />
+        </LinearLayout>
+
+        <!-- Input: Tanggal Pembayaran -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tanggal Pembayaran"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etTanggalPembayaran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="YYYY-MM-DD"
+            android:inputType="date"
+            android:padding="12dp"
+            android:enabled="false"
+            android:textColor="@color/black"/>
+
+        <!-- Input: Jumlah Piutang -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jumlah Piutang"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp" />
+        <EditText
+            android:id="@+id/etJumlahPiutang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Jumlah piutang"
+            android:inputType="numberDecimal"
+            android:enabled="false"
+            android:padding="12dp"
+            android:textColor="@color/black"/>
+
+        <!-- Input: Jumlah Pembayaran -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jumlah Pembayaran"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp" />
+        <EditText
+            android:id="@+id/etJumlahPembayaran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan jumlah pembayaran"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            android:textColor="@color/black"/>
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/btnSubmitPembayaran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Simpan"
+            android:padding="12dp"
+            android:layout_marginTop="24dp" />
+    </LinearLayout>
+</ScrollView>

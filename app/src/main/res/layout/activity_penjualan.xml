@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PenjualanActivity"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Header -->
+            <TextView
+                android:id="@+id/HeaderPenjualan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Transaksi Penjualan"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:id="@+id/labelKodeAkun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kode Akun"
+                android:inputType="numberDecimal"
+                android:enabled="false"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/tvKodeAkun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Kode Akun"
+                android:textSize="16sp"
+                android:inputType="numberDecimal"
+                android:enabled="false"
+                android:textColor="@color/black"
+                android:layout_marginBottom="16dp"
+                />
+
+            <!-- ID Penjualan -->
+            <TextView
+                android:id="@+id/labelIDPenjualan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID Penjualan"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvIDPenjualan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Loading..."
+                android:textSize="16sp"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp"
+                android:textColor="@color/black"
+                android:gravity="center_vertical" />
+
+            <!-- Tanggal Transaksi -->
+            <TextView
+                android:id="@+id/labelTanggalTransaksi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tanggal Transaksi"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/tvTanggalTransaksi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"/>
+
+            <!-- Nama Customer -->
+            <TextView
+                android:id="@+id/labelNamaCustomer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Customer"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                />
+
+            <Spinner
+                android:id="@+id/spinnerNamaCustomer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/labelBarang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Barang"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewBarang"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:divider="@android:color/black"
+                android:dividerHeight="1dp"
+                />
+
+            <Button
+                android:id="@+id/btnTambahItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tambah Item"
+                android:layout_marginBottom="16dp"
+                />
+
+            <!-- Ringkasan -->
+            <TextView
+                android:id="@+id/labelRingkasan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ringkasan Transaksi"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/labelTotalHarga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Barang : "
+                android:textSize="16sp"
+                android:paddingTop="9dp"
+                android:textColor="@color/black"
+                />
+
+            <EditText
+                android:id="@+id/etTotalHarga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Total Harga Item"
+                android:inputType="numberDecimal"
+                android:enabled="false"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/labelDiskon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Diskon : "
+                android:textSize="16sp"
+                android:paddingTop="7dp"
+                android:textColor="@color/black"
+                />
+
+            <EditText
+                android:id="@+id/etDiskon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Diskon"
+                android:inputType="numberDecimal"
+                android:enabled="false"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/labelPajak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pajak : "
+                android:textSize="16sp"
+                android:paddingTop="7dp"
+                android:textColor="@color/black"
+                />
+
+            <EditText
+                android:id="@+id/etPajak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="11%"
+                android:inputType="numberDecimal"
+                android:enabled="false"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/labelTotalBayar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Bayar : "
+                android:textSize="16sp"
+                android:paddingTop="7dp"
+                android:textColor="@color/black"
+                />
+
+            <EditText
+                android:id="@+id/etTotalBayar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Total Bayar"
+                android:inputType="number"
+                android:enabled="false"
+                android:layout_marginBottom="16dp"
+                android:textColor="@color/black"
+                />
+
+            <!-- Jenis Pembayaran -->
+            <TextView
+                android:id="@+id/labelJenisBayar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jenis Pembayaran"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                />
+
+            <RadioGroup
+                android:id="@+id/radioGroupPembayaran"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:textColor="@color/black">
+
+                <RadioButton
+                    android:id="@+id/rbKredit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kredit"
+                    android:textColor="@color/black"/>
+
+                <RadioButton
+                    android:id="@+id/rbLunas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lunas"
+                    android:textColor="@color/black"/>
+            </RadioGroup>
+
+            <!-- Tombol Checkout -->
+            <Button
+                android:id="@+id/btnCheckout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Checkout" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

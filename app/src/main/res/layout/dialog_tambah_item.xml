@@ -1,0 +1,65 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/labelItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item : "
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        />
+
+    <Spinner
+        android:id="@+id/spinnerItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/labelHargaItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Harga per-Item : "
+        android:textSize="16sp"
+        android:inputType="number"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/etHargaItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Harga per-Item"
+        android:enabled="false"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/labelJumlahItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jumlah Item : "
+        android:textSize="16sp"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/etJumlahItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Jumlah Item"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnSimpanItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Simpan"
+        android:layout_marginTop="20dp"
+        />
+</LinearLayout>
