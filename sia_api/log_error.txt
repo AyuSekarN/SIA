@@ -1,0 +1,13 @@
+Error: Detail transaksi tidak lengkap: {"item":"Produk A","jumlah":2,"harga":10000}
+Error: Detail transaksi tidak lengkap: {"item":"Produk A","jumlah":2,"harga":10000}
+Error: Detail transaksi tidak lengkap: {"id_barang":0,"sub_total":1000000,"jumlah_barang":2}
+Error: Detail transaksi tidak lengkap: {"id_barang":0,"sub_total":1000000,"jumlah_barang":2}
+Error: Detail transaksi tidak lengkap: {"id_barang":0,"sub_total":1000000,"jumlah_barang":2}
+Error: Detail transaksi tidak lengkap: {"id_barang":0,"sub_total":1000000,"jumlah_barang":2}
+Error: Detail transaksi tidak lengkap: {"id_barang":0,"sub_total":1000000,"jumlah_barang":2}
+Error: Detail transaksi tidak lengkap: {"id_barang":0,"sub_total":1000000,"jumlah_barang":2}
+Error: Detail transaksi tidak lengkap: {"id_barang":0,"sub_total":1000000,"jumlah_barang":2}
+Error: Detail transaksi tidak lengkap: {"id_barang":0,"sub_total":1000000,"jumlah_barang":2}
+Error: Detail transaksi tidak lengkap: {"id_barang":0,"sub_total":1000000,"jumlah_barang":2}
+Error: Detail transaksi tidak lengkap: {"id_barang":0,"sub_total":1500000,"jumlah_barang":3}
+Error: Detail transaksi tidak lengkap: {"id_barang":0,"sub_total":1500000,"jumlah_barang":3}

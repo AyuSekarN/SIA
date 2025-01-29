@@ -1,0 +1,14 @@
+{"id_penjualan":45,"detail_items":[{"item":"Produk A","jumlah":2,"harga":10000}]}
+{"id_penjualan":46,"detail_items":[{"item":"Produk A","jumlah":2,"harga":10000}]}
+{"id_penjualan":47,"detail_items":[{"id_barang":0,"sub_total":1000000,"jumlah_barang":2}]}
+{"id_penjualan":48,"detail_items":[{"id_barang":0,"sub_total":1000000,"jumlah_barang":2}]}
+{"id_penjualan":49,"detail_items":[{"id_barang":0,"sub_total":1000000,"jumlah_barang":2}]}
+{"id_penjualan":49,"detail_items":[{"id_barang":0,"sub_total":1000000,"jumlah_barang":2}]}
+{"id_penjualan":50,"detail_items":[{"id_barang":0,"sub_total":1000000,"jumlah_barang":2}]}
+{"id_penjualan":51,"detail_items":[{"id_barang":0,"sub_total":1000000,"jumlah_barang":2}]}
+{"id_penjualan":51,"detail_items":[{"id_barang":0,"sub_total":1000000,"jumlah_barang":2}]}
+{"id_penjualan":52,"detail_items":[{"id_barang":0,"sub_total":1000000,"jumlah_barang":2}]}
+{"id_penjualan":52,"detail_items":[{"id_barang":0,"sub_total":1000000,"jumlah_barang":2}]}
+
+{"id_penjualan":53,"detail_items":[{"id_barang":0,"sub_total":1500000,"jumlah_barang":3}]}
+{"id_penjualan":53,"detail_items":[{"id_barang":0,"sub_total":1500000,"jumlah_barang":3}]}
